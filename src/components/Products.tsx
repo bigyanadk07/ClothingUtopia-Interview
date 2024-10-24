@@ -17,7 +17,7 @@ const Products: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
 
   const handleAddToCart = (product) => {
-    addToCart({ ...product, quantity: 1 }); // Add initial quantity of 1
+    addToCart({ ...product, quantity: 1 });
   };
 
   const filteredProducts = products.filter(product =>
@@ -28,7 +28,6 @@ const Products: React.FC = () => {
     <div className="container mx-auto px-4 py-8">
       <h2 className="text-2xl font-bold mb-6 text-center">Products at Clothing Utopia</h2>
       
-      {/* Search Input */}
       <div className="mb-4">
         <input
           type="text"

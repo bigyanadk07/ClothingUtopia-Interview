@@ -4,7 +4,6 @@ const Checkout: React.FC = () => {
   const [isSuccess, setIsSuccess] = useState(false);
 
   const handleCheckout = () => {
-    // Simulate a successful purchase
     setIsSuccess(true);
   };
 
